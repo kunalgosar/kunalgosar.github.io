@@ -1,5 +1,5 @@
 body{
-  background-color: #F0F0F0 ;
+  background-color: #FFF
   text-align: center;
 
 }
@@ -24,4 +24,9 @@ body{
 }
 .contact {
   margin-top: 500px;
+}
+.links {
+
+    padding-top: 250px;
+
 }

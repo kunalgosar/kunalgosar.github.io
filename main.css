@@ -10,6 +10,7 @@ body{
     font-family: "Book Antiqua", Palatino, serif;
     font-style: normal;
     border-style: solid;
+    align-self: center;
 }
 .nav {
   color: black;

@@ -11,6 +11,7 @@ body{
     font-style: normal;
     border-style: solid;
     align-self: center;
+    text-align: center;
 }
 .nav {
   color: black;

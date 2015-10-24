@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Built by Kunal Gosar, with help from Bootswatch Templates and Bootstrap -->
   <title>Kunal Gosar</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,23 @@
   <meta name="description" content = "Kunal Gosar - Student of Electrical Engineering and Computer Science at UC Berkeley">
 
   <link rel="icon" href="img/icon.ico">
+
+<!-- Import from Music Generator Project -->
+
+<!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
+  <script type="text/javascript" charset="utf-8">
+    var midi_file = "http://kunalgosar.me/midi/mozart_midi.mid";
+  </script>
+  <script src="js/midi/player.js"></script>
+  <script src="js/midi/audioDetect.js"></script>
+  <script src="js/midi/gm.js"></script>
+  <script src="js/midi/loader.js"></script>
+  <script src="js/midi/plugin.audiotag.js"></script>
+  <script src="js/midi/plugin.webaudio.js"></script>
+  <script src="js/midi/plugin.webmidi.js"></script>
+  <script src="js/midi/synesthesia.js"></script>
 
 
   <!-- Stylesheets -->
@@ -53,7 +71,10 @@
                       <a href="#about_me">About</a>
                   </li>
                   <li class="page-scroll">
-                      <a href="/projects.html">Projects</a>
+                      <a href="#portfolio">Projects</a>
+                  </li>
+                  <li class="page-scroll">
+                    <a href="resume/resume.pdf">Resume</a>
                   </li>
                   <li class="page-scroll">
                       <a href="#contact_me">Contact</a>
@@ -62,6 +83,7 @@
           </div>
       </div>
   </nav>
+  <!--Header Section -->
   <header>
       <div class="container">
           <div class="row">
@@ -78,6 +100,7 @@
         </div>
       </div>
   </header>
+  <!-- About Me Section -->
   <div class="aboutme">
   <section class="success" id="about_me">
       <div class="container">
@@ -88,21 +111,66 @@
               </div>
           </div>
           <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <center><p>My name is Kunal Gosar, and I am a student at the University of California, Berkeley, studying Electrical Engineering and Computer Science.</p>
-                   <p>Here is a <a href="resume/resume.pdf">link to my resume</a>.</p>
-                  <p>Growing up, I lived in New Jersey, USA, Mumbai, India and Basel, Switzerland. You can see all the places I have lived on the map below:</p>
+            <div class="col-lg-10 col-lg-offset-1">
+                <center><p>My name is Kunal Gosar, and I am a student at the University of California, Berkeley, studying Electrical Engineering and Computer Science. You can view my projects and my code on <a href="https://github.com/kunalgosar">Github</a>.</p>
+                  <p>Growing up, I lived in New Jersey, USA, Mumbai, India and Basel, Switzerland before eventually ending up here in Berkeley, California.</p>
                   <h1></h1>
                 </center>
             </div>
       </div>
       <div class="map">
+        <center><p> You can see all the place that I have lived: </p></center>
         <center><iframe src="https://www.google.com/maps/d/embed?mid=z9e5TpHtCvKY.kow4awe2aJn0" width="80%" height="400px"></iframe></center>
       </div>
     </div>
   </section>
 </div>
 
+<!-- Email Me -->
+
+  <!--Implement Email Me Form -->
+
+<!-- Projects Section -->
+
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Projects</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 portfolio-item">
+                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <center><img src="img/LIT.jpg" class="img-responsive" alt="140x140" style="width: 140px; height: 140px;">
+                      <p>What's Lit - A Crowdsourced Events Rating Application</p>
+                    </center>
+                </a>
+            </div>
+            <div class="col-lg-6 portfolio-item">
+                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                </a>
+            </div>
+        </div>
+</section>
+
+<button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onclick="MIDIjs.play(midi_file);">Play Midi</button>
+
+
+
+<!-- Footer -->
   <footer id="contact_me">
     <div class="footer-above">
         <div class="container">
@@ -137,6 +205,70 @@
     </div>
   </footer>
 
+
+
+  <!-- Project Descriptions -->
+
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <div class="modal-body">
+                          <h2>WHATS LIT</h2>
+                          <hr class="star-primary">
+                          <img src="img/LIT.jpg" class="img-responsive img-centered" alt="140x140" style="width: 140px; height: 140px;">
+                          <p>What's Lit Description</p>
+                          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <div class="modal-body">
+                          <h2>Project Title</h2>
+                          <hr class="star-primary">
+                          <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                          <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                          <ul class="list-inline item-details">
+                              <li>Client:
+                                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                  </strong>
+                              </li>
+                              <li>Date:
+                                  <strong><a href="http://startbootstrap.com">April 2014</a>
+                                  </strong>
+                              </li>
+                              <li>Service:
+                                  <strong><a href="http://startbootstrap.com">Web Development</a>
+                                  </strong>
+                              </li>
+                          </ul>
+                          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
   <!-- Javascript Scripts -->
   <script src="js/jquery.js"></script>

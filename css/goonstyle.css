@@ -357,7 +357,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    padding-bottom: 100px
+    padding-bottom: 50px;
     background-color: #424242;
 }
 
@@ -372,7 +372,10 @@ footer .footer-below {
 
 
 .map {
-    height: 500px;
+    height: 400px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+
 }
 
 @media(max-width:768px) {

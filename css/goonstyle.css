@@ -2,6 +2,8 @@ body {
     overflow-x: hidden;
 }
 
+
+
 blackcolor {
   background-color: #000000;
   font-family: 'Roboto Slab', serif;
@@ -274,6 +276,7 @@ section.success a.active {
         margin: 0 0 30px;
     }
 }
+
 
 .btn-outline {
     margin-top: 15px;

@@ -17,7 +17,15 @@
   <script src="js/bootstrap.min.js"></script>
   <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
   <script type="text/javascript" charset="utf-8">
-    var midi_file = "http://kunalgosar.me/midi/mozart_midi.mid";
+  var mozart_slow = "http://kunalgosar.me/midi/mozart_slow.mid";
+  var mozart_medium = "http://kunalgosar.me/midi/mozart_medium.mid";
+  var mozart_fast = "http://kunalgosar.me/midi/mozart_fast.mid";
+  var jazz_slow = "http://kunalgosar.me/midi/jazz_slow.mid";
+  var jazz_medium = "http://kunalgosar.me/midi/jazz_medium.mid";
+  var jazz_fast = "http://kunalgosar.me/midi/jazz_fast.mid";
+  var game_slow = "http://kunalgosar.me/midi/game_slow.mid";
+  var game_medium = "http://kunalgosar.me/midi/game_medium.mid";
+  var game_fast = "http://kunalgosar.me/midi/game_fast.mid";
   </script>
   <script src="js/midi/player.js"></script>
   <script src="js/midi/audioDetect.js"></script>
@@ -161,7 +169,7 @@
                         </div>
                     </div>
                     <center><img src="img/Music_logo.png" class="img-responsive" alt="140x140" style="width: 140px; height: 140px;">
-                    <p>Music Generator - A program that algorithmicly produces music</p></center>
+                    <p>Music Generator - A program that algorithmically produces music</p></center>
                 </a>
             </div>
         </div>
@@ -243,14 +251,46 @@
           </div>
           <div class="container">
               <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
+                  <div class="col-lg-10 col-lg-offset-1">
                       <div class="modal-body">
                           <center><h2>Music Generator</h2>
                           <hr class="star-primary">
                           <img src="img/Music_logo.png" class="img-responsive img-centered" alt="40x40" style="width: 40px; height: 40px;">
-                          <p>An on-the-fly music generator that takes in a variable user-defined tempo and outputs electronic and instrumental music. Created for CalHacks 2.0. Input system through touch capacity of mobile devices, music output through web app interface. Built in C, Python, Django, Swift, JavaScript.</p>
+                          <p>An on-the-fly music generator that takes in a variable user-defined tempo and outputs electronic and instrumental music using a randomized music generating algorithm; no two tracks will ever be the same. Created for CalHacks 2.0. Built in C, Python, Django, Swift, JavaScript.</p>
                           <p> Use the button below to check out a sample track that we generated. </p>
-                          <button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onclick="MIDIjs.play(midi_file);">Play Sample Track</button><p></p>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onclick="MIDIjs.play(mozart_slow);">Classical - Slow Tempo</button>
+                            </div>
+                            <div class="col-lg-4">
+                              <button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onclick="MIDIjs.play(jazz_slow);">Jazz - Slow Tempo</button>
+                            </div>
+                            <div class="col-lg-4">
+                              <button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onclick="MIDIjs.play(game_slow);">Game Music - Slow Tempo</button>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onclick="MIDIjs.play(mozart_medium);">Classical - Medium Tempo</button>
+                            </div>
+                            <div class="col-lg-4">
+                              <button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onclick="MIDIjs.play(jazz_medium);">Jazz - Medium Tempo</button>
+                            </div>
+                            <div class="col-lg-4">
+                              <button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onclick="MIDIjs.play(game_medium);">Game Music - Medium Tempo</button>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onclick="MIDIjs.play(mozart_fast);">Classical - Fast Tempo</button>
+                            </div>
+                            <div class="col-lg-4">
+                              <button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onclick="MIDIjs.play(jazz_fast);">Jazz - Fast Tempo</button>
+                            </div>
+                            <div class="col-lg-4">
+                              <button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onclick="MIDIjs.play(game_fast);">Game Music - Fast Tempo</button>
+                            </div>
+                          </div>
                           <a href="https://github.com/kunalgosar/MusicGenerator"><p>Check out the code on Github: Click here.</p></a>
                           <a href="http://devpost.com/software/musicgenerator"><p>Check out our devpost submission: Click here.</p></a> </center>
                           <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>

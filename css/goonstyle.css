@@ -29,6 +29,10 @@ a.active {
     color: #0A1B2A;
 }
 
+h2.post-title, h3.post-subtitle{
+  text-transform: none;
+}
+
 h1,
 h2,
 h3,
@@ -38,6 +42,10 @@ h6 {
     text-transform: uppercase;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
+}
+
+h4 {
+  text-transform: none;
 }
 
 hr.star-light,
@@ -89,7 +97,7 @@ headerstuff {
 header {
     text-align: center;
     color: #fff;
-    height: 100vh;
+    height: 70vh;
     background-image: url("../img/blue_black.jpg");
 }
 
@@ -116,6 +124,7 @@ header .intro-text .skills {
     font-weight: 300;
     font-family: 'Roboto Slab', serif;
 }
+
 
 @media(min-width:768px) {
     header .container {
@@ -184,6 +193,16 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+}
+
+.post-preview {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.post-preview img {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 section {
@@ -358,6 +377,10 @@ footer {
 
 footer h3 {
     margin-bottom: 30px;
+}
+
+footer {
+    padding: 50px 0 0px;
 }
 
 footer .footer-above {

@@ -16,6 +16,7 @@
 <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
   <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
+<!--
   <script type="text/javascript" charset="utf-8">
   var mozart_slow = "midi/mozart_slow.mid";
   var mozart_medium = "midi/mozart_medium.mid";
@@ -27,6 +28,7 @@
   var game_medium = "midi/game_medium.mid";
   var game_fast = "midi/game_fast.mid";
   </script>
+
   <script src="js/midi/player.js"></script>
   <script src="js/midi/audioDetect.js"></script>
   <script src="js/midi/gm.js"></script>
@@ -35,6 +37,7 @@
   <script src="js/midi/plugin.webaudio.js"></script>
   <script src="js/midi/plugin.webmidi.js"></script>
   <script src="js/midi/synesthesia.js"></script>
+-->
 
 
   <!-- Stylesheets -->
@@ -315,6 +318,7 @@
                             <div class="col-lg-4">
                               <button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onclick="MIDIjs.play(game_medium);">Game Music - Medium Tempo</button>
                             </div>
+                            <a href="#" onClick="MIDIjs.play('midi/mozart_slow.mid');">Play hinematov.mid</a>
                           </div>
                           <h1></h1>
                           <a href="https://github.com/kunalgosar/MusicGenerator"><p>Check out the code on Github: Click here.</p></a>

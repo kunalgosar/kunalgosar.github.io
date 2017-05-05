@@ -1,0 +1,26 @@
+body,h1 {font-family: "Raleway", sans-serif}
+
+body, html {height: 100%}
+
+.bgimg {
+    background-image: url('https://images2.alphacoders.com/568/thumb-1920-568747.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.blur {
+  width:100%;
+  height:100%;
+  position: absolute;
+  -webkit-filter: blur(100px);
+  -moz-filter: blur(100px);
+  -ms-filter: blur(100px);
+  -o-filter: blur(100px);
+  filter: blur(100px);
+}
+
+.front {
+  position: relative;
+  z-index: 2;
+}
